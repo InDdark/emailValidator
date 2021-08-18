@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <meta http-equiv = "refresh" content = "5" />  -->
+    <meta name="keywords" content="fashion, cloths" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="design.css" >
+    <title>Khinchi Collections</title>
+       <style>
+           *{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: url('./maxed.jpg');
+}
+
+div.main{
+  width: 400px;
+ 
+  margin: 100px auto 0px auto;
+}
+
+h2{
+  text-align: center;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+div.search{
+  background-color: rgba(50,100,50, 0.5);
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,);
+  box-shadow: 2px 2px 15px
+ rgba(0,0,0,0.3);
+ color:rgb(100, 250,200);
+ 
+}
+
+
+form#search{
+    margin: 15px;
+}
+
+label{
+  font-family: sans-serif;
+  font-size: 18px;
+  font-style: italic;
+
+}
+input#email{
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 7px;
+}
+
+
+input#submit{
+  width: 100px;
+  padding: 4px;
+  font-family: sans-serif;
+  background-color: rgba(250,100,0,0.8);
+  margin-bottom: 20px;
+}
+       </style>
+</head>
+
+<body>
+   <div class="main">
+       <div class="search">
+           <h2>Select the csv file.</h2>
+           <form id="form" method="post" action="/search" enctype="multipart/form-data">
+              <label>Email Verification : </label>
+              <br>
+              <label for="myfile">Select files:</label>
+              <input type="file" id="myfile" name="myfile"><br><br>
+             <!-- <input type="email" name="email" id="email" placeholder="Enter your Email">
+              <br><br> -->
+              <input type="submit" value="submit" id="submit">
+           </form>
+       </div>
+   </div>
+</body>
+
+</html>
