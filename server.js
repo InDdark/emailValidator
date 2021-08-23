@@ -12,7 +12,7 @@ const http = require('http')
 const multer = require('multer');
 const parse = require('csv-parse');
 const { callbackify } = require('util');
-const port = 80;
+// const port = 80;
 
 const emailArray = [];
 const output = fs.createWriteStream('output.csv', {flags: 'a'});
@@ -154,4 +154,10 @@ app.post('/search', urlencodedParser, [
 });
 */
 
-app.listen(port, () => console.info(`App listening on port ${port}`))
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}...`);
+});
+
+
+// app.listen(port, () => console.info(`App listening on port ${port}`))
